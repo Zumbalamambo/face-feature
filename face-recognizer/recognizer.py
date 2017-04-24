@@ -5,12 +5,6 @@ import sys
 import numpy as np
 import json
 
-class NumPyArangeEncoder(json.JSONEncoder):
-    def default(self, obj):
-        if isinstance(obj, np.ndarray):
-            return obj.tolist() # or map(int, obj)
-        return json.JSONEncoder.default(self, obj)
-
 cascadePath = "./cascades/haarcascade_frontalface_alt2.xml"
 FACE_CASCADE = cv2.CascadeClassifier(cascadePath)
 
