@@ -3,8 +3,8 @@ import cv2
 import sys
 import numpy as np
 
-samples = np.loadtxt('general-samples.data', np.float32)
-responses = np.loadtxt('general-responses.data', np.float32)
+samples = np.loadtxt('./trained-data/gender-samples.data', np.float32)
+responses = np.loadtxt('./trained-data/gender-responses.data', np.float32)
 responses = responses.reshape((responses.size,1))
 
 FACE_CASCADE = cv2.CascadeClassifier('./cascades/haarcascade_frontalface_alt2.xml')

@@ -77,10 +77,10 @@ try:
             edited_train("./imdb-datasets/images/females/" + file,age)
 
     print "training complete"
-    np.savetxt('general-samples.data', SAMPLES)
+    np.savetxt('./trained-data/age-samples.data', SAMPLES)
     RESPONSES = np.array(RESPONSES, np.float32)
     RESPONSES = RESPONSES.reshape((RESPONSES.size, 1))
-    np.savetxt('general-responses.data', RESPONSES)  
+    np.savetxt('./trained-data/age-responses.data', RESPONSES)  
 
 except KeyboardInterrupt:
     sys.exit(0)

@@ -1,4 +1,11 @@
 # ros-face-features
 
-## Gender result :
-![Gender](https://github.com/ahmdrz/ros-face-features/blob/master/resources/image.jpg "Gender")
+### How to run gender feature:
+
+`make train-gender`
+`make predict-gender`
+
+### How to run age feature:
+
+`make train-age`
+`make predict-age`
