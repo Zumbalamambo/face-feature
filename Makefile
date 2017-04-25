@@ -6,5 +6,7 @@ predict-age:
 	@python ./age/knn/predict.py
 predict-gender:
 	@python ./gender/knn/predict.py
+ros-gender:
+	@python ./gender/ros/predict.py
 face:
 	@python ./face-recognizer/recognizer.py
